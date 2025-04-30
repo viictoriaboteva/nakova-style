@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bg">
+   <head>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Lora&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+      <link rel="stylesheet" href="src/main.css" />
+
+      <meta charset="UTF-8" />
+   </head>
+
+   <body>
+      <header>
+         <div class="header">
+            <div class="logo-title">
+               <img src="./assets/logo.png" alt="Logo" class="logo" />
+               <span class="site-title">Nakova Style</span>
+            </div>
+
+            <nav class="navbar">
+               <a href="#home">Начало</a>
+               <a href="#categories">Продукти</a>
+               <a href="#about">За дизайнера</a>
+               <a href="#shipping">Доставка</a>
+
+               <a href="#" class="card">
+                  <i class="fa fa-shopping-cart"></i>
+                  Количка
+                  <span class="cart-count">0</span>
+               </a>
+            </nav>
+         </div>
+      </header>
+
+      <main>
+         <section class="heroSection" id="home">
+            <img src="./assets/fav outfit.jpg" class="side-img" />
+
+            <div class="hero-content">
+               <h1>Make Your Wish</h1>
+               <p>then place your order xo✨</p>
+            </div>
+
+            <img src="./assets/pink dress juli.jpg" class="side-img" />
+         </section>
+
+         <section class="categorySection" id="categories">
+            <h2>Колекции</h2>
+
+            <div class="category-grid">
+               <div class="category dress" onclick="showDetails('dress')">
+                  <h3>Рокли</h3>
+               </div>
+               <div class="category casual" onclick="showDetails('casual')">
+                  <h3>Ежедневни</h3>
+               </div>
+               <div class="category accessories" onclick="showDetails('accessories')">
+                  <h3>Аксесоари</h3>
+               </div>
+            </div>
+
+            <div class="product-details" id="dress">
+               <h3>Рокли</h3>
+               <p>Леки, стилни и подходящи за всякакви поводи.</p>
+            </div>
+
+            <div class="product-details" id="casual">
+               <h3>Ежедневни</h3>
+               <p>Практични и комфортни дрехи за всеки ден.</p>
+            </div>
+
+            <div class="product-details" id="accessories">
+               <h3>Аксесоари</h3>
+               <p>Допълват всяка визия.</p>
+            </div>
+         </section>
+
+         <section class="aboutSection" id="about">
+            <img
+               src="./assets/designer_mimi.jpeg"
+               alt="Мария Накова"
+               class="about-image"
+            />
+
+            <p>
+               Мария Накова създава дрехи, които говорят. Съчетание от изчистен дизайн и
+               индивидуалност, вдъхновени от движението, женствеността и свободата.
+            </p>
+         </section>
+
+         <section class="shippingSection" id="shipping">
+            <h2>Условия за доставка</h2>
+
+            <p>
+               Доставяме в рамките на 1-2 работни дни. Възможност за връщане до 30 дни.
+            </p>
+         </section>
+      </main>
+
+      <footer>&copy; 2025 Nakova Style. Всички права запазени.</footer>
+
+      <script src="./src/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,247 @@
+:root {
+   --textColor: #1c2736;
+   --accent1Color: #145a89;
+   --accent2Color: #7a8d7a;
+   --accent3Color: #f5d7bf;
+   --bgColor: #f4f2ef;
+   --highlightColor: #d6a77a;
+}
+
+html {
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Lora", serif;
+   background-color: #f4f2ef;
+   color: #1c2736;
+   margin: 0px;
+   padding: 0px;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* Основни стилове за текст и фон */
+h1,
+h2,
+h3 {
+   font-family: "Lora", serif;
+   font-weight: 200;
+   color: var(--textColor);
+}
+
+p {
+   font-family: "Lora", serif;
+   color: var(--textColor);
+}
+
+main {
+   display: flex;
+   width: 100%;
+   max-width: 1200px;
+   flex-direction: column;
+   gap: 100px;
+   margin-inline: auto;
+}
+
+/*#region Header */
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--bgColor);
+   padding: 10px 20px;
+}
+
+.header .logo-title {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.header .logo-title .logo {
+   height: 50px;
+}
+
+.header .logo-title .site-title {
+   font-size: 28px;
+   font-weight: 600;
+   color: #1c2736;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.header .navbar {
+   display: flex;
+   gap: 20px;
+}
+
+.header .navbar a {
+   color: #1c2736;
+   font-weight: 500;
+   transition: ease 0.2s;
+}
+
+.header .navbar a:hover {
+   color: #628862;
+}
+
+.header .navbar a.card {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 4px;
+}
+
+.header .navbar a.card .cart-count {
+   display: flex;
+   width: 22px;
+   height: 22px;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
+   font-weight: 700;
+   color: #ffffff;
+   background-color: var(--highlightColor);
+   border-radius: 999px;
+}
+/*#endregion */
+
+/*#region Hero */
+.heroSection {
+   display: flex;
+   position: relative;
+   height: 75vh;
+   background-color: var(--bgColor);
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 10px 0px;
+   overflow: hidden;
+}
+
+.heroSection .side-img {
+   width: 100%;
+   max-width: 320px;
+   height: 100%;
+   border-radius: 20px;
+   object-fit: cover;
+}
+
+.heroSection .hero-content {
+   min-width: 320px;
+   text-align: center;
+   z-index: 2;
+}
+
+.heroSection .hero-content h1 {
+   font-family: "Playfair Display", serif;
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+.heroSection .hero-content p {
+   font-size: 20px;
+   color: var(--accent2Color);
+}
+/*#endregion */
+
+/*#region Categories */
+.categorySection h2 {
+   font-size: 40px;
+}
+
+.categorySection .category-grid {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 30px;
+   padding: 40px 0px;
+}
+
+.categorySection .category-grid .category {
+   width: 100%;
+   text-align: center;
+   background-color: #ffffff;
+   border-radius: 20px;
+   box-shadow: 0 8px 16px #0000000d;
+   cursor: pointer;
+   padding: 20px;
+   transition: ease 0.2s;
+}
+
+.categorySection .category-grid .category.dress {
+   background-color: var(--accent1Color);
+}
+
+.categorySection .category-grid .category.casual {
+   background-color: var(--accent3Color);
+}
+
+.categorySection .category-grid .category.accessories {
+   background-color: #ffffff;
+   color: var(--textColor);
+}
+
+.categorySection .category-grid .category:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 12px 24px #00000014;
+}
+
+.categorySection .product-details {
+   display: none;
+   background-color: #ffffff;
+   border-radius: 20px;
+   box-shadow: 0 8px 16px #0000001a;
+   padding: 16px 20px;
+}
+/*#endregion */
+
+/*#region About */
+.aboutSection {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+.aboutSection .about-image {
+   width: 280px;
+   height: 280px;
+   object-fit: cover;
+   border-radius: 999px;
+   box-shadow: 0 8px 16px #0000001a;
+   flex-shrink: 0;
+}
+
+.about-container p {
+   font-size: 18px;
+   line-height: 1.6;
+   color: var(--textColor);
+   text-align: right; /* Позиционираме текста от дясно */
+   flex: 1; /* Това ще накара параграфа да заеме свободното пространство и да се позиционира от дясно */
+}
+/*#endregion */
+
+/*#region Shipping */
+.shippingSection h2 {
+   margin-bottom: 10px;
+}
+/*#endregion */
+
+/*#region Footer */
+footer {
+   font-size: 14px;
+   text-align: center;
+   color: #777;
+   padding: 40px 10px 8px 10px;
+}
+/*#endregion */
