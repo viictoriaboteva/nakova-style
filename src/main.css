@@ -181,15 +181,19 @@ main {
 }
 
 .categorySection .category-grid .category.dress {
-   background-color: var(--accent1Color);
+   background-color: #e3d5ca;
 }
 
 .categorySection .category-grid .category.casual {
-   background-color: var(--accent3Color);
+   background-color: #e3d5ca;
 }
 
 .categorySection .category-grid .category.accessories {
-   background-color: #ffffff;
+   background-color: #e3d5ca;
+   color: var(--textColor);
+}
+.categorySection .category-grid .category.products {
+   background-color: #e3d5ca;
    color: var(--textColor);
 }
 
